@@ -1,0 +1,296 @@
+/* =======================================
+    main.css
+    use this file for your custom styles
+========================================== */
+
+/* set the default color, font-size, and line height */
+html {
+  color: #333;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+/* make images and embedded media fluid */
+img,
+object {
+  max-width: 100%;
+}
+
+/* =======================================
+    author styles
+    place your custom styles below here
+========================================== */
+
+html {
+  background-color: #ddd;
+}
+
+.container {
+  background-color: #f1f1f1;
+  width: 1080px;
+  margin: 0 auto;
+  padding: 5%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+
+section {
+  clear: both;
+}
+
+nav {
+  float: right;
+  width: 500px;
+  display: inline-block;
+}
+
+ul > li {
+  float: left;
+  padding: 2%;
+  margin: 1%;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.brand {
+  float: left;
+  font-size: 1.2em;
+}
+
+.sub {
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: super;
+  border-bottom: 2px solid #555;
+}
+
+h1 {
+  display: inline;
+}
+
+.title {
+  display: block;
+  font-size: 8em;
+  color: rgba(220, 220, 215, 0.52);
+  letter-spacing: -6px;
+  padding: 0;
+  margin: 0;
+}
+
+.title-events {
+  font-weight: bold;
+  padding: 1%;
+}
+
+.trend, .events, .latest {
+  padding: 1% 0 1% 5%;
+}
+
+.trend p {
+  display: -webkit-inline-box;
+  width: 45%;
+  margin-bottom: 60px;
+  color: #575757;
+}
+
+figure {
+  padding: 1em 10px;
+  align-self: auto;
+  margin: 1em 0;
+}
+
+figure img {
+  filter: grayscale(50%);
+}
+
+figcaption {
+  font-weight: bold;
+}
+
+.category{
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  float: right;
+  margin-left: 25px;
+}
+
+.category > span {
+  display: inline-block;
+  text-align: left;
+  margin-right: 5px;
+  vertical-align: middle;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.events {
+  height: 400px;
+}
+
+.events article{
+  padding: 0 5%;
+}
+
+.latest h1 {
+  
+}
+
+.latest-items {
+  margin-left: 2%;
+  clear: both;
+}
+
+.top-picks {
+  margin: 2%;
+  width: 200px;
+  height: 250px;
+  float: left;
+}
+
+.top-picks img {
+  filter: grayscale(90%);
+}
+
+.latest {
+  /*background-color: #777;*/
+}
+
+.textevents time {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5%;
+}
+
+span.goto {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+span.goto::after{
+  content: ">>";
+  font-size: 11px;
+}
+
+.half {
+  /*width: 50%;*/
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+footer {
+  clear: both;
+}
+
+.company {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  color: #777;
+  padding-top: 3em;
+  
+}
+
+.social {
+  width: 410px;
+  float: right;
+}
+
+
+
+
+
+
+/* =======================================
+    helper classes
+    from HTML5 Boilerplate
+    https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+========================================== */
+
+ /*
+  * Hide visually and from screen readers:
+  */
+
+ .hidden {
+     display: none !important;
+ }
+
+ /*
+  * Hide only visually, but have it available for screen readers:
+  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+  */
+
+ .visuallyhidden {
+     border: 0;
+     clip: rect(0 0 0 0);
+     height: 1px;
+     margin: -1px;
+     overflow: hidden;
+     padding: 0;
+     position: absolute;
+     width: 1px;
+ }
+
+ /*
+  * Extends the .visuallyhidden class to allow the element
+  * to be focusable when navigated to via the keyboard:
+  * https://www.drupal.org/node/897638
+  */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+     clip: auto;
+     height: auto;
+     margin: 0;
+     overflow: visible;
+     position: static;
+     width: auto;
+ }
+
+ /*
+  * Hide visually and from screen readers, but maintain layout
+  */
+
+ .invisible {
+     visibility: hidden;
+ }
+
+ /*
+  * Clearfix: contain floats
+  *
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    `contenteditable` attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that receive the `clearfix` class.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+
+ .clearfix:before,
+ .clearfix:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+
+ .clearfix:after {
+     clear: both;
+ }
